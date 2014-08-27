@@ -2,7 +2,7 @@
 #   say where you are
 #
 # Commands:
-#   hubot <user> is in south korea
+#   hubot set location of <user> to location
 #   hubot where is <user> - see where a user is located
 #
 # Examples:
