@@ -3,7 +3,7 @@
 #
 # Commands:
 #   hubot <user> is in south korea
-#   hubot where is <user> - see what roles a user has
+#   hubot where is <user> - see where a user is located
 #
 # Examples:
 #   hubot kyle is in an airstream
@@ -39,7 +39,7 @@ module.exports = (robot) ->
       else
         msg.send "#{name}? Never heard of 'em"
 
-  robot.respond /@?([\w .\-_]+)'s location is (["'\w: \-_]+)[.!]*$/i, (msg) ->
+  robot.respond /set location of @?([\w .\-_]+) to (["'\w: \-_]+)[.!]*$/i, (msg) ->
     name    = msg.match[1].trim()
     newLocation = msg.match[2].trim()
 
